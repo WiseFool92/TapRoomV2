@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'reactstrap';
+import '../App.css';
 
 function Tap(props) {
   return (
@@ -12,7 +13,7 @@ function Tap(props) {
         <p>{props.alcoholContent}</p><br />
         <p>{props.pints}</p><br />
       </div>
-      <Button onClick={() => props.whenPintSold({
+      <Button class = "btn" onClick={() => props.whenPintSold({
           name: props.name,
           brand: props.brand,
           price: props.price,

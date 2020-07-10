@@ -4,3 +4,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+h1 {
+  text-align: center;
+}
+
+.btn {
+  margin: .1rem;
+}
+
+h2, h3, h4, p {
+  text-align: center;
+  color: whitesmoke;
+}

@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'reactstrap';
+import '../App.css';
 
 function TapDetail(props) {
-  const { tap, onClickingDelete } = props;
+  const { tap } = props;
   return (
     <>
       <h2>Tap Details</h2><br /><hr />
@@ -11,10 +12,10 @@ function TapDetail(props) {
       <h4>{tap.brand}</h4><br /><hr />
       <p>{tap.price}</p><br /><hr />
       <p>{tap.alcoholContent}</p><br /><hr />
-      <p>Pints Left:</p><br /><hr />
-      <p>{tap.pints}</p><br /><hr />
-      <Button onClick = { props.onClickingEdit }>Update</Button>
-      <Button onClick = {() => props.onClickingDelete(tap.id) }>Delete</Button>
+      <p>Pints Left:</p>
+      <p>{tap.pints}</p><hr />
+      <Button class = "btn" onClick = { props.onClickingEdit }>Update</Button>
+      <Button class = "btn" onClick = {() => props.onClickingDelete(tap.id) }>Delete</Button>
     </>
   );
 }
