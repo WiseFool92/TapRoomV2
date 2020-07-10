@@ -79,7 +79,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Specs
 
-![Diagram of react views](public/.drawio)
+![Diagram of react views](<img src="public/.drawio")
 
 ### Behavior Driven Development Spec List
 
