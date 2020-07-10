@@ -6,13 +6,17 @@ import '../App.css';
 function Tap(props) {
   return (
     <>
-    <div class="threed">
-      <div onClick = {() => props.whenTapClicked(props.id)}>
-        <h2>{props.name}</h2><br />
-        <h3>Brand: {props.brand}</h3><br />
-        <h4>Price: {props.price}</h4><br />
-        <p>Alcohol Content: {props.alcoholContent}</p><br />
-        <p>Pints: {props.pints}</p><hr />
+    <div class="display">
+      <div class="threed">
+        <Button color="info" >
+          <div onClick = {() => props.whenTapClicked(props.id)}>
+            <h2>{props.name}</h2><br />
+            <h3>Brand: {props.brand}</h3><br />
+            <h4>Price: {props.price}</h4><br />
+            <p>Alcohol Content: {props.alcoholContent}</p><br />
+            <p>Pints: {props.pints}</p><hr />
+          </div>
+        </Button>
       </div>
     </div>
       <div class="form">

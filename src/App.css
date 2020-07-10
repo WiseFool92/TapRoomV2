@@ -30,9 +30,14 @@ h2, h3, h4, p {
   text-align: center;
 }
 
+.display {
+  align-content: center;
+  text-align: center;
+}
+
 .threed:hover
 {
-  -webkit-transform: scale(.8);
-  -ms-transform: scale(.8);
-  transform: scale(.8);
+  -webkit-transform: scale(.9);
+  -ms-transform: scale(.9);
+  transform: scale(.9);
 }
