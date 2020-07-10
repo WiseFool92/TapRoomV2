@@ -6,6 +6,7 @@ import '../App.css';
 function Tap(props) {
   return (
     <>
+    <div class="threed">
       <div onClick = {() => props.whenTapClicked(props.id)}>
         <h2>{props.name}</h2><br />
         <h3>Brand: {props.brand}</h3><br />
@@ -13,6 +14,7 @@ function Tap(props) {
         <p>Alcohol Content: {props.alcoholContent}</p><br />
         <p>Pints: {props.pints}</p><hr />
       </div>
+    </div>
       <div class="form">
         <Button color = "warning" class = "btn" onClick={() => props.whenPintSold({
             name: props.name,
