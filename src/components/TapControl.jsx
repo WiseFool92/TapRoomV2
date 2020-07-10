@@ -13,7 +13,6 @@ class TapControl extends React.Component {
 
   constructor(props) {
     super(props);
-    // console.log(props);
     this.state = {
       selectedTap: null,
       editing: false
@@ -69,12 +68,9 @@ class TapControl extends React.Component {
 
   handleSellingPint = (drinkSold) => {
     if (drinkSold.pints > 0) {
-      this.setState(prevState => ({
-        masterTapList: prevState.masterTapList.map(
-          (tap, index) => (tap.id === drinkSold.id ? Object.assign({}, this.state.masterTapList[index], { pints: parseInt
-          (drinkSold.pints - 1) }) : tap)
-        )
-      }));
+      const { dispatch } = this.props;
+      const action = a.sellPint(drinkSold);
+      dispatch(action);
     }
   }
 

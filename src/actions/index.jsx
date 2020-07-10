@@ -21,3 +21,17 @@ export const addTap = (tap) => {
     id: id
   }
 }
+
+export const sellPint = (tap) => {
+  const { name, brand, price, alcoholContent, pints, id } = tap;
+
+  return {
+    type: c.SELL_PINT,
+    name: name,
+    brand: brand,
+    price: price,
+    alcoholContent: alcoholContent,
+    pints: pints,
+    id: id
+  };
+};
