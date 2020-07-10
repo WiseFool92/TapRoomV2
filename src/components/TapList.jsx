@@ -6,8 +6,7 @@ function TapList(props){
   return (
     <>
       {Object.values(props.tapList).map((tap) => {
-      return 
-      <Tap
+      return <Tap
         whenTapClicked = {props.onTapSelection}
         whenPintSold = {props.onSellPint}
         name = {tap.name}
@@ -17,7 +16,7 @@ function TapList(props){
         pints = {tap.pints}
         key = {tap.id}
         id = {tap.id}
-      />
+        />
       })}
     </>
   );

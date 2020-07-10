@@ -6,6 +6,7 @@ import EditTapForm from './EditTapForm';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import * as a from '../actions';
+import { Button } from 'reactstrap';
 
 
 class TapControl extends React.Component {
