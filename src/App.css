@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url('./img/greendragoninn.jpg');
+  background-image: url('./img/greenDragonInn.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -18,6 +18,7 @@ h1 {
 
 .btn {
   margin: .1rem;
+  align-content: center;
 }
 
 h2, h3, h4, p {

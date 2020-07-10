@@ -13,14 +13,16 @@ function Tap(props) {
         <p>Alcohol Content: {props.alcoholContent}</p><br />
         <p>Pints: {props.pints}</p><hr />
       </div>
-      <Button class = "btn" onClick={() => props.whenPintSold({
-          name: props.name,
-          brand: props.brand,
-          price: props.price,
-          alcoholContent: props.alcoholContent,
-          pints: props.pints,
-          id: props.id
-        })}>Sell Pint</Button>
+      <div class="form">
+        <Button color = "warning" class = "btn" onClick={() => props.whenPintSold({
+            name: props.name,
+            brand: props.brand,
+            price: props.price,
+            alcoholContent: props.alcoholContent,
+            pints: props.pints,
+            id: props.id
+          })}>Sell Pint</Button>
+      </div>
     </>
   )
 }
