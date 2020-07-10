@@ -8,10 +8,10 @@ function Tap(props) {
     <>
       <div onClick = {() => props.whenTapClicked(props.id)}>
         <h2>{props.name}</h2><br />
-        <h3>{props.brand}</h3><br />
-        <h4>{props.price}</h4><br />
-        <p>{props.alcoholContent}</p><br />
-        <p>{props.pints}</p><br />
+        <h3>Brand: {props.brand}</h3><br />
+        <h4>Price: {props.price}</h4><br />
+        <p>Alcohol Content: {props.alcoholContent}</p><br />
+        <p>Pints: {props.pints}</p><br />
       </div>
       <Button class = "btn" onClick={() => props.whenPintSold({
           name: props.name,

@@ -10,19 +10,19 @@ function ReusableForm(props) {
         <input
           type = 'text'
           name = 'name'
-          placeholder = 'Tap Name' /><br /><hr />
+          placeholder = 'Tap Name' /><hr />
         <input
           type = 'text'
           name = 'brand'
-          placeholder = 'Tap Brand' /><br /><hr />
+          placeholder = 'Tap Brand' /><hr />
         <input
           type = 'number'
           name = 'price'
-          placeholder = 'Tap Price' /><br /><hr />
+          placeholder = 'Tap Price' /><hr />
         <input
           type = 'text'
           name = 'alcoholContent'
-          placeholder = 'Proof' /><br /><hr />
+          placeholder = 'Proof' /><hr />
         <input
           type = 'number'
           name = 'pints'
