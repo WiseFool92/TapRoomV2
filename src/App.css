@@ -7,6 +7,12 @@ body {
 
 h1 {
   text-align: center;
+  color: rgb(3, 87, 7);
+}
+
+.btn:Hover {
+  transition: 1s;
+  color: rgb(24, 18, 104);
 }
 
 .btn {
@@ -16,4 +22,8 @@ h1 {
 h2, h3, h4, p {
   text-align: center;
   color: whitesmoke;
+}
+
+.header {
+  background-color: black;
 }

@@ -7,11 +7,11 @@ function TapDetail(props) {
   const { tap } = props;
   return (
     <>
-      <h2>Tap Details</h2><hr />
-      <h3>{tap.name}</h3><hr />
-      <h4>Brand: {tap.brand}</h4><hr />
-      <p>Price: {tap.price}</p><hr />
-      <p>Alcohol Content: {tap.alcoholContent}</p><hr />
+      <h2>Tap Details</h2><br />
+      <h3>{tap.name}</h3><br />
+      <h4>Brand: {tap.brand}</h4><br />
+      <p>Price: {tap.price}</p><br />
+      <p>Alcohol Content: {tap.alcoholContent}</p><br />
       <p>Pints Left: {tap.pints}</p><hr />
       <Button class = "btn" onClick = { props.onClickingEdit }>Update</Button>
       <Button class = "btn" onClick = {() => props.onClickingDelete(tap.id) }>Delete</Button>

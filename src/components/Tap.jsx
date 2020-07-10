@@ -11,7 +11,7 @@ function Tap(props) {
         <h3>Brand: {props.brand}</h3><br />
         <h4>Price: {props.price}</h4><br />
         <p>Alcohol Content: {props.alcoholContent}</p><br />
-        <p>Pints: {props.pints}</p><br />
+        <p>Pints: {props.pints}</p><hr />
       </div>
       <Button class = "btn" onClick={() => props.whenPintSold({
           name: props.name,

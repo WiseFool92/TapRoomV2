@@ -110,7 +110,7 @@ class TapControl extends React.Component {
     return (
       <>
         {currentlyVisibleState}
-        <Button onClick={this.handleClick}>{buttonText}</Button>
+        <Button class="btn" onClick={this.handleClick}>{buttonText}</Button>
       </>
     );
   }
