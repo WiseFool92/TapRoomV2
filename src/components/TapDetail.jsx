@@ -13,8 +13,8 @@ function TapDetail(props) {
       <p>Price: {tap.price}</p><br />
       <p>Alcohol Content: {tap.alcoholContent}</p><br />
       <p>Pints Left: {tap.pints}</p><hr />
-      <Button class = "btn" onClick = { props.onClickingEdit }>Update</Button>
-      <Button class = "btn" onClick = {() => props.onClickingDelete(tap.id) }>Delete</Button>
+      <Button color = "primary" class = "btn" onClick = { props.onClickingEdit }>Update</Button>
+      <Button color = "danger" class = "btn" onClick = {() => props.onClickingDelete(tap.id) }>Delete</Button>
     </>
   );
 }

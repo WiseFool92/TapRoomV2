@@ -6,29 +6,31 @@ import '../App.css';
 function ReusableForm(props) {
   return (
     <>
+    <div class ="form" >
       <form onSubmit = {props.formSubmissionHandler}>
         <input
           type = 'text'
           name = 'name'
-          placeholder = 'Tap Name' /><hr />
+          placeholder = 'Tap Name' /><br />
         <input
           type = 'text'
           name = 'brand'
-          placeholder = 'Tap Brand' /><hr />
+          placeholder = 'Tap Brand' /><br />
         <input
           type = 'number'
           name = 'price'
-          placeholder = 'Tap Price' /><hr />
+          placeholder = 'Tap Price' /><br />
         <input
           type = 'text'
           name = 'alcoholContent'
-          placeholder = 'Proof' /><hr />
+          placeholder = 'Proof' /><br />
         <input
           type = 'number'
           name = 'pints'
-          placeholder = 'Number of Pints available' /><br /><hr />
-        <Button class = "btn" type = 'submit'>{props.buttonText}</Button>
+          placeholder = 'Pints for sale' /><br /><hr />
+        <Button color ="success" class ="btn" type ='submit'>{props.buttonText}</Button>
       </form>
+    </div>
     </>
   )
 }
