@@ -5,7 +5,7 @@ import { Jumbotron } from "reactstrap";
 function Header() {
   return (
     <Jumbotron>
-      <div class="header">
+      <div className="header">
         <h1>The Green Dragon Inn</h1>
       </div>
     </Jumbotron>

@@ -36,7 +36,7 @@ function Tap(props) {
 Tap.propTypes = {
   name: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
+  price: PropTypes.string.isRequired,
   alcoholContent: PropTypes.string.isRequired,
   pints: PropTypes.number,
   id: PropTypes.string,
